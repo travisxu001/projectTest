@@ -1,16 +1,24 @@
 
 public class House {
-	private int x,y,Sqr,Age;
-	private String name;
+	private int x,y,Sqr;
+	private String name,Age;
 	private double price;
+	private int Distance;
 	//contructor for class hours
-	public House(String name, int x, int y, int Sqr, int Age, double price){
+	public House(String name, int x, int y, int Sqr, String Age, double price){
 		this.name = name;
 		this. x = x;
 		this.y = y;
 		this.Age = Age;
 		this.price = price;
+		Distance = 0;
 		
+	}
+	public int getDistance() {
+		return Distance;
+	}
+	public void setDistance(int distance) {
+		Distance = distance;
 	}
 	public int getX() {
 		return x;
@@ -30,10 +38,10 @@ public class House {
 	public void setSqr(int sqr) {
 		Sqr = sqr;
 	}
-	public int getAge() {
+	public String getAge() {
 		return Age;
 	}
-	public void setAge(int age) {
+	public void setAge(String age) {
 		Age = age;
 	}
 	public String getName() {
@@ -48,6 +56,8 @@ public class House {
 	public void setPrice(double price) {
 		this.price = price;
 	}
+	
+	
 	
 	
 	
